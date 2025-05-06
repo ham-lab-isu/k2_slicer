@@ -1,0 +1,3 @@
+geometry_msgs/Point32[] surface_points   # 3‑D input points coming from Orca
+---
+ToolPath[] tool_paths
