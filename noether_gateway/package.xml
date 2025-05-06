@@ -4,7 +4,7 @@
   <name>noether_gateway</name>
   <version>0.1.0</version>
   <description>Noether Gateway and OrcaSlicer to Robot bridge</description>
-  <maintainer email="walterg@iastate.edu">wglockner</maintainer>
+  <maintainer email="your.email@example.com">Your Name</maintainer>
   <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_python</buildtool_depend>

@@ -1,0 +1,27 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_trajectory_position_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+joint_trajectory_position_controller:
+  ros__parameters:
+    joints:
+      - khi_cx110l_joint1
+      - khi_cx110l_joint2
+      - khi_cx110l_joint3
+      - khi_cx110l_joint4
+      - khi_cx110l_joint5
+      - khi_cx110l_joint6
+    command_interfaces:
+      - position
+      - velocity
+    state_interfaces:
+      - position
+      - velocity

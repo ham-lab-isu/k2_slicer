@@ -31,8 +31,8 @@ def launch_setup(context, *args, **kwargs):
             'execute': execute.lower() == 'true',
             'visualize': visualize.lower() == 'true',
             'scale': float(scale),
-            'planning_group': 'panda_arm',  # Update with your robot's group name
-            'tcp_link': 'panda_link8',      # Update with your robot's TCP link
+            'planning_group': 'khi_cx110l',  # Update with your robot's group name
+            'tcp_link': 'khi_cx110l_link6',      # Update with your robot's TCP link
             'robot_frame': 'world'          # Update with your robot's reference frame
         }],
         output='screen'

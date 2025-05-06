@@ -1,0 +1,9 @@
+# Default initial positions for khi_cx110l's ros2_control fake system
+
+initial_positions:
+  khi_cx110l_joint1: 0
+  khi_cx110l_joint2: 0
+  khi_cx110l_joint3: 0
+  khi_cx110l_joint4: 0
+  khi_cx110l_joint5: 0
+  khi_cx110l_joint6: 0

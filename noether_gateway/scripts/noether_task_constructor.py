@@ -1,19 +1,4 @@
 #!/usr/bin/env python3
-
-'''Copyright [2025] [Walter Glockner]
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.'''
-
 """
 Noether MoveIt Task Constructor Integration with Improved Planning
 
@@ -70,10 +55,10 @@ def normalize(q):
     q.x, q.y, q.z, q.w = q.x/n, q.y/n, q.z/n, q.w/n
     return q
 
-# Configuration - UPDATE THESE FOR YOUR ROBOT
+# Configuration
 DEFAULT_SCALE = 0.001             # mm to m conversion
-PLANNING_GROUP_NAME = "panda_arm" # Change to match your robot (e.g., "panda_arm", "ur5_arm", etc.)
-TCP_LINK = "panda_link8"          # Change to match your robot's TCP (end-effector link)
+PLANNING_GROUP_NAME = "khi_cx110l"
+TCP_LINK = "khi_cx110l_link6"
 MAX_VELOCITY = 0.1                # Default execution velocity (m/s)
 TRAVEL_VELOCITY = 0.5             # Velocity for travel moves (m/s)
 Z_JUMP_THRESHOLD = 0.005          # Threshold for detecting travel moves

@@ -30,11 +30,11 @@ def generate_launch_description() -> LaunchDescription:
     )
     
     # MoveIt2 resources
-    moveit_pkg = "moveit_resources_panda_moveit_config"
+    moveit_pkg = "khi_cx110l_moveit_config"
     moveit_launch_file = os.path.join(
         get_package_share_directory(moveit_pkg), 
         "launch", 
-        "demo.launch.py"
+        "moveit_rviz.launch.py"
     )
     
     # — launch-file arguments ——————————————————————————————————————————
@@ -83,12 +83,12 @@ def generate_launch_description() -> LaunchDescription:
         condition=IfCondition(visualize),
     )
     
-    # MoveIt2 demo launch for Panda robot (only if use_robot is true)
+    # MoveIt2 demo launch for khi_cx110l robot (only if use_robot is true)
     moveit_demo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(moveit_launch_file),
         launch_arguments={
             'use_sim_time': 'true',
-            'use_rviz': 'false',  # We'll use our own RViz with custom config
+            'use_rviz': 'false',
         }.items(),
         condition=IfCondition(use_robot),
     )
